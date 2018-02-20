@@ -13,7 +13,7 @@ function getAndPrintHTMLChunks (options) {
         path: options.path
     };
 
-    https.get(options, function(response) {
+    https.get(reqOptions, function(response) {
 
         response.on("data", function(dataChunk) {
             chuncks.push(dataChunk);
